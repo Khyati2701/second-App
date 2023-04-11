@@ -1,53 +1,34 @@
 import React, { Component } from 'react';
 
 class StateInClassCompo extends Component {
-    dataMember = "Something Data Member..."
-    constructor(props) {
-        super(props);
-        this.state={
-            stateData:"init",
-            valueForIncreDec:0,
-            trunonoff:true
+//class classname inheritance component  
+    //1. State: it means memory allocation
+    //aapde aapda j comonent mathi memory allocate kar vani hoy tayare state no use thay che ane jayare bija component mathi memory lavani hoy tayare props no use thay che
+    //jayare be state property use karvi hoy tayare ek constructor ni jarura pade. 
+    //constructor ma this parameter no use thay.
+    // ane jayare pn constructor no use kari super keyword no use karvo j pade.
+    //constructor state mate default che.
+
+    constructor(){
+        super()
+        this.state = {
+            data: 1 
         }
-        // this.clickHandleSomething = this.clickHandleSomething.bind(this)
     }
-    
-    // clickHandleSomething(){
-    //     console.log("called");
-    //     this.dataMember = "Change..."
-    //     this.setState({ stateData:"other data" })
-    // }
-    clickHandleSomething=()=>{
-        console.log("called");
-        this.dataMember = "Change..."
-        this.setState({ stateData:"other data" })
+    change(){
+        // this.setState ({data: "My name is Khyati"})//state na data change kari sako 
+        this.setState ({data: this.state.data + 1})
     }
-    increment = ()=>{
-        this.setState({ valueForIncreDec:this.state.valueForIncreDec+1})
-    }
-    render() {
-        let data = "Something..."
-        return (
+    render(){
+        return(
             <>
-                {data} <br />
-                {this.dataMember} <br />
-                {this.state.stateData}
-                {/* <button onClick={clickHandleSomething}>Click</button> */}
-                {/* <button onClick={this.clickHandleSomething()}>Click</button> */}
-                <button onClick={this.clickHandleSomething}>Click</button>
-                <br />
-                <button onClick={this.increment} >Incrememnt</button>
-                {this.state.valueForIncreDec}
-                <button onClick={()=>{this.setState({ valueForIncreDec:this.state.valueForIncreDec-1})}}>Decrement</button>
-                <br />
-                <br />
-                <br />
-                <button onClick={()=>{this.setState({ trunonoff:!this.state.trunonoff})}}>{this.state.trunonoff? "On":"Off" }</button>
-                <br />
-                <br />
-                <br />
+                <div>
+                    <h1>state:</h1>
+                    <h2>{this.state.data}</h2>
+                    <button onClick={() => this.change()}>update data</button>
+                </div>
             </>
-        );
+        )
     }
 }
 

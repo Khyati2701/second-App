@@ -5,6 +5,13 @@ class WelcomeToClassCompo extends Component {
     render() {
         return (
             <div>
+                {/* class component static data mate use thay che. je khali user ne dekhad vano hoy.
+                    class component ma render use thay che.
+                    function ma nathi use tha tu.
+                    component aetala mate use thay k page reload na thay. 
+                    static data perform karava mate class components use thay che.
+                    */}
+
                 <h2>React Class Component</h2>
                 <h3>Class Based Components</h3>
                 <p>Class is a collection of datamember and member function only</p>
