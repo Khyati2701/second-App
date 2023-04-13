@@ -7,6 +7,7 @@ import PropsInClassCompo from './03PropsInClassCompo.jsx';
 import StateInClassCompo from './04StateInClassCompo.jsx';
 import StateLifeCycleInClassCompo from './05StateLifeCycleInClassCompo.jsx';
 import ConditionalRenderingInClassCompo from './06ConditionalRenderingInClassCompo';
+import ListKeysInClassCompo from './07ListKeysInClassCompo';
 
 class ClassRoute extends Component {
     render() {
@@ -20,6 +21,7 @@ class ClassRoute extends Component {
                         <Route path="stateinclass" element={<StateInClassCompo />} />
                         <Route path="statelifecycleinclass" element={<StateLifeCycleInClassCompo />} /> 
                         <Route path="conditionalrenderinginclass" element={<ConditionalRenderingInClassCompo />} />  
+                        <Route path="listkeysinclasscompo" element={<ListKeysInClassCompo />} />
                     </Route>
                 </Routes>
             </>
