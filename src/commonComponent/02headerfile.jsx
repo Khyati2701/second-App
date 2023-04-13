@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+// import download.jpeg from "./Component/download.jpeg";
 import {
     MDBNavbar,
     MDBContainer,
@@ -19,7 +20,7 @@ const Headerfile = () => {
         <>
             <MDBNavbar expand='lg' dark bgColor='dark'>
                 <MDBContainer fluid>
-                    <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
+                    <MDBNavbarBrand href='#'>React</MDBNavbarBrand>
                     <MDBNavbarToggler
                         type='button'
                         data-target='#navbarColor02'
