@@ -6,9 +6,10 @@ import PricingPage from "./PricingPage.jsx";
 import Features from "./Features.jsx";
 import Examples from "./Examples.jsx";
 import ClassComponent from "./Component/Class-Component/ClassRoute";
+import FunctionalComponent from "./Component/FunctionComponent/FunctionalRoute";
 
 const Examplecomporoutes = React.lazy(() =>{return import('./Component/Class-Component/ClassRoute')})
-// const FunctionalComponent = React.lazy(() => import('./Component/FunctionalComponent/FunctionalRoute'))
+// const FunctionalComponent = React.lazy(() =>{return import('./Component/FunctionalComponent/FunctionalRoute')})
 // const Product = React.lazy(() => import('./ClassComponent'))
 const MainRoutes = createBrowserRouter([
     {
@@ -36,10 +37,10 @@ const MainRoutes = createBrowserRouter([
               path: "classcomponent/*",
               element: <Suspense fallback={<h2>Loading...</h2>}><ClassComponent /></Suspense> ,
             },
-            // {
-            //   path: "functionalcomponent/*",
-            //   element: <Suspense fallback={<h2>Loading...</h2>}><FunctionalComponent /></Suspense> ,
-            // },
+            {
+              path: "functionalcomponent/*",
+              element: <Suspense fallback={<h2>Loading...</h2>}><FunctionalComponent /></Suspense> ,
+            },
           ],
     },
 ]);

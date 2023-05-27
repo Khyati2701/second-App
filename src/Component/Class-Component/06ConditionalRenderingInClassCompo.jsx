@@ -33,7 +33,7 @@ class ConditionalRenderingInClassCompo extends Component {
                     <button className='btn btn-info' onClick={()=>{ this.setState({status:!this.state.status})}}> { (this.state.status)? "Logout":"Login" }</button>
                 </>
             );
+    
+        };
     };
-};
-
 export default ConditionalRenderingInClassCompo;

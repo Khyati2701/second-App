@@ -12,6 +12,7 @@ class ClassCompoMenu extends Component {
                     <li><Link to="statelifecycleinclass">State LifeCycle</Link></li>
                     <li><Link to="conditionalrenderinginclasscompo">Conditional Rendering</Link></li>
                     <li><Link to="listkeysinclasscompo">List and Keys</Link></li>
+                    <li><Link to="hoc">Hoc</Link></li>
                 </ul>
                 <Outlet></Outlet>
             </>

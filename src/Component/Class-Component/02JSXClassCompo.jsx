@@ -22,16 +22,16 @@ class JSXClassCompo extends Component {
 
         // const headeing = "<h1>Something</h1>"
         // const headeing = <h1>Something</h1>
-        let something = "My site Title";
+        let something = "JSX: Javascript Syntax Extention ";
         // const headeing = "<h1>"+something+"</h1>"
         // const headeing = `<h1>${something}</h1>`
-        const headeing = <h1>{something}</h1>
+        const headeing = <p>{something}</p>
         return (
             <div>
                 {/* JSX: javascript Syntax Extantion.
                          we can write html and js in same they can provide jsx. */}
                 {headeing}
-                2+2 = {2 + 2}
+                27+23 = {27 + 23}
                 <p>FullName : {user.firstName} {user.lastName}</p>
             </div>
         );
